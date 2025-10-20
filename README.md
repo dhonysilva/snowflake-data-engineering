@@ -28,3 +28,7 @@ https://www.coursera.org/professional-certificates/snowflake-data-engineering
     - Lasts until they're dropped
   - Temporary tables
     - Persisits as long as the session is active
+
+### Clone
+
+When we clone an object, we're creating a new version of it that is zero copy. It means that at the time we create the clone, the clone relies on the same stored data, the same micro partition as the object we copied. Obce we start making changes to the clone, the Snowflake keeps track of the changes made to the clone.
