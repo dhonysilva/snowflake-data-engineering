@@ -18,3 +18,13 @@ https://www.coursera.org/professional-certificates/snowflake-data-engineering
     - Automarically run when the underlying table they are based on is updated
 - Semi-structred data
 - Snowflake's architecture
+
+## Module 02
+
+- Tables
+  - Permanent tables
+    - CREATE TABLE
+  - Transient tables
+    - Lasts until they're dropped
+  - Temporary tables
+    - Persisits as long as the session is active
