@@ -56,3 +56,25 @@ Security admin - `securityadmin`
 User admin     - `useradmin`
 Sys admin      - `sysadmin`
 Public         - `public`
+
+### Snowpark
+
+Snowpark is a framework that allows us to write code in Python or Java to interact with Snowflake.
+
+A few reasons to learn Snowpark:
+
+- For those who prefer working with dataframes (like Pandas), it's good to know Snowflake has a expressive dataframe API that scales well.
+- For those who prefer working in a non-SQL language, you might like Snowpark DataFrames.
+- They appear frequently in the Snowflake ecosystem.
+
+Python Worksheet
+
+They are convinient because they have Snowpark library pre-installed.
+
+Notice Python Worksheets are different from Notebooks.
+
+You can load a table as a Snowpark DataFrame using `session.table` or `session.sql`. Create a table with `session.sql`.
+
+Snowpark DataFrames are lazily executed, so no computations happens until you call `collect.show()` or something similar.
+
+
