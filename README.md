@@ -18,3 +18,63 @@ https://www.coursera.org/professional-certificates/snowflake-data-engineering
     - Automarically run when the underlying table they are based on is updated
 - Semi-structred data
 - Snowflake's architecture
+
+## Module 02
+
+- Tables
+  - Permanent tables
+    - CREATE TABLE
+  - Transient tables
+    - Lasts until they're dropped
+  - Temporary tables
+    - Persisits as long as the session is active
+
+### Clone
+
+When we clone an object, we're creating a new version of it that is zero copy. It means that at the time we create the clone, the clone relies on the same stored data, the same micro partition as the object we copied. Obce we start making changes to the clone, the Snowflake keeps track of the changes made to the clone.
+
+### RBAC
+
+Main Concepts
+
+- Secure objects
+- Privileges
+- Roles
+- Users
+
+Role `accountadmin`. Is one of the six main roles that automatically exist in every account. We never had to create it.
+
+Privileges - ability to do something can be assigned to roles.
+Those roles can be assigned to users.
+
+We can also assign roles to other roles.
+
+Automatically generated roles
+
+Org admin
+Security admin - `securityadmin`
+User admin     - `useradmin`
+Sys admin      - `sysadmin`
+Public         - `public`
+
+### Snowpark
+
+Snowpark is a framework that allows us to write code in Python or Java to interact with Snowflake.
+
+A few reasons to learn Snowpark:
+
+- For those who prefer working with dataframes (like Pandas), it's good to know Snowflake has a expressive dataframe API that scales well.
+- For those who prefer working in a non-SQL language, you might like Snowpark DataFrames.
+- They appear frequently in the Snowflake ecosystem.
+
+Python Worksheet
+
+They are convinient because they have Snowpark library pre-installed.
+
+Notice Python Worksheets are different from Notebooks.
+
+You can load a table as a Snowpark DataFrame using `session.table` or `session.sql`. Create a table with `session.sql`.
+
+Snowpark DataFrames are lazily executed, so no computations happens until you call `collect.show()` or something similar.
+
+
