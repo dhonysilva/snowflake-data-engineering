@@ -21,6 +21,18 @@ https://www.coursera.org/professional-certificates/snowflake-data-engineering
 
 ## Module 02
 
+- Time Travel
+- Permanent, temporary, and transient tables
+- Cloning tables, schemas, and databases
+- Resource monitors
+- UDF and UDFTs
+- Stored procedures
+- Functions
+- Role-based access control
+- Snowflake Extension for VS Code
+- How to use Snowpark Dataframes for data manipulation
+- Snowflake CLI
+
 - Tables
   - Permanent tables
     - CREATE TABLE
@@ -77,4 +89,16 @@ You can load a table as a Snowpark DataFrame using `session.table` or `session.s
 
 Snowpark DataFrames are lazily executed, so no computations happens until you call `collect.show()` or something similar.
 
+### CLI
 
+Lets manage:
+- Apps
+- Connections
+- Objects
+- Snowpark
+- Snowpark Container Services (SPCS)
+- Streamlit
+
+And let's execute SQL queries.
+
+The Snowflake CLI tool makes it easy to version control your Snowflake projects. Another benefit is that having a Command Line Tool lets us customize lots of aspects of our workflow, which matters a lot for builders.
